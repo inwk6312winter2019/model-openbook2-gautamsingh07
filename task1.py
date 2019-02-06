@@ -6,7 +6,7 @@ with open("Street_Centerlines.csv") as file:
 print (a)
 
 
-def histogram ():
+def histogram (file):
  d = {}
  for row in file:
   key="MAINTENANCE" 
@@ -14,3 +14,13 @@ def histogram ():
   (key,val) = row
   d[int(key)] = val
  print(d)
+
+def unique(file):
+ uni=[]
+ x= file_contents.split()
+ for word in x:
+ if word not in uni:
+  uni.append(word)  
+ print (uni)
+
+
